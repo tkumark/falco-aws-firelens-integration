@@ -64,6 +64,11 @@
           "containerPath": "/host/usr",
           "sourceVolume": "usr-fs",
           "readOnly": true
+        },
+        {
+          "containerPath": "/host/etc",
+          "sourceVolume": "etc-fs",
+          "readOnly": true
         }
       ]
     }
@@ -103,6 +108,12 @@
       "name": "usr-fs",
       "host": {
         "sourcePath": "/usr"
+      }
+    },
+    {
+      "name": "etc-fs",
+      "host": {
+        "sourcePath": "/etc"
       }
     }
   ]
