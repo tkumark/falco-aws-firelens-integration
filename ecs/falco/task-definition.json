@@ -15,11 +15,12 @@
     },
     {
       "name": "falco",
-      "image": "falcosecurity/falco:0.17.1",
+      "image": "falcosecurity/falco:latest",
       "essential": true,
       "cpu": 10,
       "memory": 512,
       "privileged": true,
+      "pseudoTerminal":true,
       "command": [
         "/usr/bin/falco",
         "-pc",
